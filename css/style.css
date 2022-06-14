@@ -1,0 +1,33 @@
+body { margin:5px; background-image: url("../images/FondoCombate1.jpg"); }
+
+.container {
+  width:800px;
+  margin: auto;
+}
+
+.barra {
+  background-color:#94a2c9;
+  color: #e8dfdf;
+  border:#000 1px solid; 
+  font-size: 20px;
+  height: 40px; width: 800px;
+}
+
+.boton{
+    color:red;
+    font-size: 40px;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 8px;
+    border:2px solid blue;
+}
+.boton:hover{
+    background-color: white;
+    color: #000000;
+}
+#gameOver{
+  position: absolute;
+  top: 150px;
+  right: 450px; 
+  display: none;
+}
