@@ -1,7 +1,13 @@
-body { margin:5px; background-image: url("../images/wall.jpg"); background-repeat: no-repeat;}
+body { 
+  margin:0px; 
+  background-image: url("../images/background-pic.jpg"); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
 
 .container {
   width:800px;
+  padding: 50px;
   margin: auto;
 }
 
@@ -25,21 +31,41 @@ body { margin:5px; background-image: url("../images/wall.jpg"); background-repea
     background-color: white;
     color: #000000;
 }
-.finGameOver{
-  position: absolute;
-  top: 150px;
-  right: 450px; 
-  display: none;
-}
-#start-btn, #restart-btn, #back-to-menu {
-  background-color: green;
+
+#start-btn {
+  background-color: rgb(41, 117, 217);
   color: white;
-  padding: 20px;
+  position:absolute;
+  padding: 18px;
   font-size: 20px;
-  margin-top: 40px;
-  border-radius: 10px; 
+  margin-top: 470px;
+  margin-left: 350px;
+  border-radius: 20px; 
+  text-align: center;
+}
+#back-to-menu{
+  background-color: rgb(41, 117, 217);
+  color: white;
+  position:ab;
+  padding: 30px;
+  font-size: 20px;
+  margin-left: 300px;
+  margin-top: 150px;
+  border-radius: 20px;
+
 }
 
 .hidden{
   display: none;
+}
+
+#gameOverScreen{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 800px;
+
 }

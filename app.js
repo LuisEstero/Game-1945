@@ -4,15 +4,15 @@ function initCanvas(){
     let naveImage   = new Image(); // Bombardero
     let enemiespic1  = new Image(); // Enemigo 1
     let enemiespic2 = new Image(); // Enemigo 2
-    let gameOver = new Image();  // Imagen Game Over
+    //let gameOver = new Image();  // Imagen Game Over
 
     // Fondo y aviones
-    backgroundImage.src = "images/fondo_nubes.jpeg"; //Imagen fondo
-    naveImage.src       = "images/Bombardero.png"; //Imagen Bombardero
-    gameOver.src        = "images/GameOver.png";  // Imagen Game Over
+    backgroundImage.src = "./images/fondo_nubes.jpeg"; //Imagen fondo
+    naveImage.src       = "./images/Bombardero.png"; //Imagen Bombardero
+    //gameOver.src        = "./images/GameOver.png";  // Imagen Game Over
     // Enemigos fotos
-    enemiespic1.src     = "images/enemigo3.png"; // Imagen Enemigo 1
-    enemiespic2.src     = "images/AvionEnemigo2.png"; // Imagen Enemigo 2
+    enemiespic1.src     = "./images/enemigo3.png"; // Imagen Enemigo 1
+    enemiespic2.src     = "./images/AvionEnemigo2.png"; // Imagen Enemigo 2
     
     // Medidas del  (canvas)
     let cW = ctx.canvas.width; // 750px 
