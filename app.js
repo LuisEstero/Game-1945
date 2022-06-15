@@ -300,9 +300,10 @@ function initCanvas(){
         }
     });
 }
- const botonStart = document.getElementById("start-btn")
- const canvasDiv = document.getElementById("canvasDiv")
+const botonStart = document.getElementById("start-btn")
+const canvasDiv = document.getElementById("canvasDiv")
 const menuStart = document.getElementById("splash-screen")
+//const setetBoton = document.getElementById("reset-game")
 
  botonStart.addEventListener('click', function(){
  canvasDiv.classList.remove("hidden")
@@ -318,4 +319,10 @@ const botonRetry = document.getElementById("back-to-menu")
 botonRetry.addEventListener('click', function(){
 location.reload();
     
-   });
+});
+
+const resetBoton = document.getElementById("reset-game");
+botonRetry.addEventListener('click', function(){
+location.reload();
+        
+});

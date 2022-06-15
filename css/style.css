@@ -43,6 +43,18 @@ body {
   border-radius: 20px; 
   text-align: center;
 }
+ #reset-game {
+  background-color: rgb(172, 32, 123);
+  color: white;
+  position:absolute;
+  padding: 18px;
+  font-size: 20px;
+  margin-top: 2s0px;
+  margin-left: 40px;
+  border-radius: 20px; 
+  text-align: center;
+
+}
 #back-to-menu{
   background-color: rgb(41, 117, 217);
   color: white;
