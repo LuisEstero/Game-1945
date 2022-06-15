@@ -141,7 +141,12 @@ function initCanvas(){
                 this.gameStatus.over = true;
                 //ctx.style.display = none;
                 //gameOver.style.diplay = "flex";
-                this.gameStatus.message = "Game Over";
+                //this.gameStatus.message = "Game Over";
+                const gameOver = document.getElementById("gameover-screen")
+                const canvasDivOcult = document.getElementById("canvasDiv")
+
+                gameOver.classList.remove("hidden")
+                canvasDivOcult.classList.add("hidden")
                 
             }
             // Esto detecta un choque de la nave con enemigos
@@ -156,7 +161,11 @@ function initCanvas(){
             if ((enemy.y < this.y + 25 && enemy.y > this.y - 25) &&
                 (enemy.x < this.x + 45 && enemy.x > this.x - 45)) { // Comprueba si el enemigo está a la izquierda o a la derecha de la nave
                     this.gameStatus.over = true;
-                    this.gameStatus.message = 'You Died!'
+                    const gameOver = document.getElementById("gameover-screen")
+                    const canvasDivOcult = document.getElementById("canvasDiv")
+    
+                    gameOver.classList.remove("hidden")
+                    canvasDivOcult.classList.add("hidden")
                 }
 
             if(this.gameStatus.over === true){  
@@ -291,9 +300,22 @@ function initCanvas(){
         }
     });
 }
+ const botonStart = document.getElementById("start-btn")
+ const canvasDiv = document.getElementById("canvasDiv")
+const menuStart = document.getElementById("splash-screen")
 
-window.addEventListener('load', function(event) {
-    initCanvas();
+ botonStart.addEventListener('click', function(){
+ canvasDiv.classList.remove("hidden")
+ menuStart.classList.add("hidden")
+ initCanvas();
+ 
 });
 
+//window.addEventListener('load', function(event) {
+//    initCanvas();
+//});
+const botonRetry = document.getElementById("back-to-menu")
+botonRetry.addEventListener('click', function(){
+location.reload();
     
+   });

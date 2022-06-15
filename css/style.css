@@ -31,3 +31,15 @@ body { margin:5px; background-image: url("../images/wall.jpg"); background-repea
   right: 450px; 
   display: none;
 }
+#start-btn, #restart-btn, #back-to-menu {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 40px;
+  border-radius: 10px; 
+}
+
+.hidden{
+  display: none;
+}
