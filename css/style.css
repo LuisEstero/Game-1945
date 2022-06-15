@@ -1,4 +1,4 @@
-body { margin:5px; background-image: url("../images/FondoCombate1.jpg"); }
+body { margin:5px; background-image: url("../images/wall.jpg"); background-repeat: no-repeat;}
 
 .container {
   width:800px;
@@ -25,7 +25,7 @@ body { margin:5px; background-image: url("../images/FondoCombate1.jpg"); }
     background-color: white;
     color: #000000;
 }
-#gameOver{
+.finGameOver{
   position: absolute;
   top: 150px;
   right: 450px; 
