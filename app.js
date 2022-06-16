@@ -324,4 +324,10 @@ const botonRetry = document.getElementById("back-to-menu")
 botonRetry.addEventListener('click', function(){
 location.reload();
     
-   });
+});
+
+const resetBoton = document.getElementById("reset-game");
+botonRetry.addEventListener('click', function(){
+location.reload();
+        
+});
