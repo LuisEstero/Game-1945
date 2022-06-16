@@ -312,8 +312,8 @@ function initCanvas(){
 });
 
 const resetGame = document.getElementById("reset-game")
-botonRetry.addEventListener('click', function(){
-    location.reload();
+resetGame.addEventListener('click', function(){
+location.reload();
 });
 
 
